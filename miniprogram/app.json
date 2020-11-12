@@ -1,5 +1,7 @@
 {
   "pages": [
+    "pages/chatPage/chatPage",
+    "pages/firstPage/firstPage",
     "pages/index/index",
     "pages/userConsole/userConsole",
     "pages/storageConsole/storageConsole",
@@ -17,10 +19,32 @@
   "window": {
     "backgroundColor": "#F6F6F6",
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarBackgroundColor": "#FF0000",
     "navigationBarTitleText": "云开发 QuickStart",
     "navigationBarTextStyle": "black"
   },
   "sitemapLocation": "sitemap.json",
-  "style": "v2"
+  "usingComponents": {
+    "van-row": "@vant/weapp/row/index",
+    "van-col": "@vant/weapp/col/index",
+    "van-button": "./miniprogram_npm/@vant/weapp/button/index",
+    "van-cell": "./miniprogram_npm/@vant/weapp/cell/index",
+    "van-cell-group": "./miniprogram_npm/@vant/weapp/cell-group/index"
+  },
+  "tabBar": {
+    "position":"bottom",
+    "selectedColor": "#FFA500",
+    "list": [
+      { 
+        "text": "首页",
+        "pagePath": "pages/chatPage/chatPage",
+        "iconPath": "/images/tabBar/mmexport1534242947449.jpg"
+      },
+      { 
+        "text": "个人中心",
+        "pagePath": "pages/firstPage/firstPage",
+        "iconPath": "/images/tabBar/mmexport1534242947449.jpg"
+      }
+    ]
+  }
 }

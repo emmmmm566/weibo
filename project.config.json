@@ -26,17 +26,15 @@
       "disablePlugins": [],
       "outputPath": ""
     },
-    "enableEngineNative": false,
     "bundle": false,
     "useIsolateContext": true,
     "useCompilerModule": true,
     "userConfirmedUseCompilerModuleSwitch": false,
-    "userConfirmedBundleSwitch": false,
     "packNpmManually": false,
     "packNpmRelationList": [],
     "minifyWXSS": true
   },
-  "appid": "wx5c87d7976622b0cd",
+  "appid": "wxd8d9757b210dabaf",
   "projectname": "weibo",
   "libVersion": "2.8.1",
   "simulatorType": "wechat",

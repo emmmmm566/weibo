@@ -1,0 +1,8 @@
+<!--miniprogram/pages/firstPage/firstPage.wxml-->
+<view class="indexContainer">
+  <image class="avatar" src='/images/code-cloud-callback-config.png'></image>
+  <text class="userName">{{message}}</text>
+  <view class="goStudy">
+    <text>我是登录页</text>
+  </view>
+</view>

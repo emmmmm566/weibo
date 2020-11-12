@@ -1,0 +1,26 @@
+<!--miniprogram/pages/chatPage/chatPage.wxml-->
+<template name="sidebarTemplate">
+  <van-row>
+    <van-col span="7">
+      <van-sidebar active-key="{{ activeKey }}" bind:change="sidebarOnChangeHandler">
+        <van-sidebar-item  wx:for="{{typeList}}" title="{{item.typeName}}" />
+      </van-sidebar>
+    </van-col>
+    <van-col span="17">
+      <van-grid column-num="2" gutter="10">
+        <van-grid-item use-slot wx:for="{{ 8 }}" wx:for-item="index">
+          <image
+            style="width: 100%; height: 90px;"
+            src="https://img.yzcdn.cn/vant/apple-{{ index + 1 }}.jpg"
+          />
+        </van-grid-item>
+      </van-grid>
+    </van-col>
+  </van-row>
+</template>
+
+<van-tabs active="{{active}}">
+  <van-tab wx:for="{{tabList}}" wx:key="*this" title="{{item}}">
+    <template is="sidebarTemplate" data="{{activeKey, typeList}}"></template>
+  </van-tab>
+</van-tabs>
